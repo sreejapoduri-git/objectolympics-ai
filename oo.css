@@ -1,0 +1,125 @@
+/* Import a fun, bold font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    /* Use a vibrant, diagonal gradient for the background */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 9%, #fad0c4 10%, #ffd1ff 50%, #a1c4fd 100%);
+    color: #4B0082; /* Deep Indigo for text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Apply the new fun font */
+    font-family: 'Fredoka One', cursive;
+}
+
+header {
+    /* Make the header pop with a bright, solid color and a shadow */
+    background-color: #ff4757; /* Bright Red-Pink */
+    color: #ffffff; /* White text */
+    padding: 2rem 1rem;
+    border-bottom: 8px solid #feca57; /* Bright Yellow border */
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2); /* Add a fun text shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Make the title bigger */
+}
+
+main {
+    padding: 1rem;
+}
+
+#input-section {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 15px;
+    /* Add a colorful shadow that matches the theme */
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.2);
+    border: 3px solid #ffffff;
+}
+
+textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #a1c4fd; /* Light Blue border */
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif; /* Use a more standard font for input */
+}
+
+#generate-button {
+    display: inline-block;
+    background-color: #57ffc0; /* Bright Mint Green */
+    color: #3d3d3d; /* Dark Gray text */
+    padding: 18px 35px;
+    border: none;
+    border-radius: 50px; /* Make it a pill shape */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    /* Add a cool animation for when it's clicked or hovered */
+    transition: transform 0.2s ease, background-color 0.3s;
+    font-family: 'Fredoka One', cursive;
+}
+
+#generate-button:hover {
+    background-color: #00e0a5; /* Slightly darker Mint Green */
+    transform: scale(1.1); /* Make the button grow */
+}
+
+#output-section {
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.game {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    border-left: 10px solid #ff6348; /* Coral Accent Border */
+    /* Add a subtle animation for when games appear */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Defines the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.game h3 {
+    color: #ff6348; /* Coral color for game titles */
+    border-bottom: 2px dashed #a1c4fd; /* Light Blue dashed line */
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #4B0082; /* Deep Indigo footer */
+    color: #ffffff;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
